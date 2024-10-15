@@ -12,9 +12,9 @@ A simple Tic-Tac-Toe game built using HTML, CSS, JAVASCRIPT. The game allows two
 
 ## Features:
    1. Two-player functionality<br>
-   2. Reset option to restart the game ![tic reset](https://github.com/user-attachments/assets/b658824d-00e5-4fd5-9913-6e3a6b3b8d39)<br>
+   2. Reset option to restart the game.<br>  ![tic reset](https://github.com/user-attachments/assets/b658824d-00e5-4fd5-9913-6e3a6b3b8d39)<br>
    3. Responsive design for various screen sizes (if web-based).<br>
-   4. Display of game results (win, draw) and option to reset the game ![tic win](https://github.com/user-attachments/assets/14764ce4-d9db-4aa5-be09-c47771de94c4)<br>
+   4. Display of game results (win, draw) and option to reset the game.<br>  ![tic win](https://github.com/user-attachments/assets/14764ce4-d9db-4aa5-be09-c47771de94c4)<br>
 
 ## Technologies Used
    HTML <br>
