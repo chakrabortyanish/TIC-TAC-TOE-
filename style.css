@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,79 +12,163 @@ body{
     width: 100%;
     height: 100vh;
     padding-top: 30px;
-    background-color: rgb(168, 168, 168);
+    background-image: url("image/back-image.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
-    width: 300px;
-    height:min-content;
+    width: 350px;
     padding: 20px 0;
     text-align: center;
-    background-color: darkslategray;
+    background-color: rgb(255, 255, 255);
     border-radius: 5%;
     margin: 0 auto;
-    box-shadow: 5px 5px 5px rgb(23, 47, 47);
 }
 
 h2{
-    color: rgb(255, 255, 0);
-    font-size: 2rem;
+    font-family: "Playwrite GB S", cursive;
+    color: #8854d0;
+    font-size: 2.2rem;
     font-weight: 800;
 }
 
 .game-box{
     display: inline-block;
-    padding: 20px 0 0px;
+    padding: 20px 0 0 0;
+    position: relative;
+    margin: 20px 0 20px 0;
 }
 
 .game-box .row{
    display: flex;
    align-items: center;
-   gap: 10px;
-   padding-bottom: 10px;
 }
 
-.game-box .box{
-    width: 50px;
-    height: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    background-color: rgb(225, 225, 225);
-    border-radius: 5px;
-}
-
-.playerX{
-    color: rgb(0, 106, 46);
-}
-
-.playerO{
-    color: blue;
+.game-box .r1, .game-box .r2{
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 button{
+    background-color: transparent;
     border: 0;
     outline: 0;
+}
+
+.game-box .box{
+    width: 70px;
+    height: 70px;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
+#b1, #b2, #b4, #b5, #b7, #b8{
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.win_line{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    padding: 1px;
+}
+
+#r1{
+    top: 56px;
+    left: 0px;
+}
+
+#r2{
+    top: 128px;
+    left: 0;
+}
+
+#r3{
+    top: 199px;
+    left: 0;
+}
+
+#c1{
+    transform: rotate(90deg);
+    top: 125px;
+    left: -71px;
+}
+
+#c2{
+    transform: rotate(90deg);
+    top: 125px;
+    left: -1px;
+}
+
+#c3{
+    transform: rotate(90deg);
+    top: 125px;
+    left: 70px;
+}
+
+#x_left{
+    width: 280px;
+    transform: rotate(45deg);
+    top: 125px;
+    left: -38px;
+}
+
+#x_right{
+    width: 280px;
+    transform: rotate(135deg);
+    top: 127px;
+    left: -38px;
+}
+
+.playerX{      /* --- This class is created by js --- */
+    color: #fa8231;
+}
+
+.playerO{       /* --- This class is created by js --- */
+    color: #2d98da;
+}
+
+.won-color{      /* --- This class is created by js --- */
+    color: rgb(255, 14, 14);
+}
+
 #msg{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(255, 200, 0) ;
+    font-family: "Playwrite GB S", cursive;
+    color: #40407a ;
     font-size: 1.2rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 #reset{
-    color: rgb(0, 41, 76);
+    font-family: "Raleway", sans-serif;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 5px 10px;
-    background-color: rgb(5, 255, 18);
+    padding: 5px 20px;
+    background-color: rgb(0, 255, 13);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #reset:hover{
-    background-color: rgb(87, 255, 87);
+    background-color: rgb(121, 255, 121);
+}
+
+@media only screen and (max-width: 400px) {
+    body{
+        padding-top: 0;
+        background-image: none;
+    }
+
+    .container{
+        width: 100%;
+        border-radius: 0%;
+    }
 }
