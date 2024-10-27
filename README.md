@@ -18,10 +18,9 @@ A simple Tic-Tac-Toe game built using HTML, CSS, JAVASCRIPT. The game allows two
    4. Reset option to restart the game.<br>  ![reset](https://github.com/user-attachments/assets/879a2347-6860-42de-807a-b9958258412e)
 <br>
    5. Responsive design for various screen sizes (if web-based).<br>
-   6. Display of game results (win, draw) and option to reset the game.<br>![winn](https://github.com/user-attachments/assets/e2d3df75-3052-4417-8f0b-46b8b78ffaad)
- <br>
- ![draw](https://github.com/user-attachments/assets/1e360b13-8bbe-44fe-b79f-f9549db27aaf)
-<br>
+   6. Display of game results (win, draw) and option to reset the game.<br>![winn](https://github.com/user-attachments/assets/b0cfe102-656b-4294-a239-f64116e7cb4d)<br>
+     ![draw](https://github.com/user-attachments/assets/4328b4bf-9fa4-47e4-b12c-4fee0fc413e6)
+      <br>
    7. Simple, intuitive user interface.
       
 ## Technologies Used
